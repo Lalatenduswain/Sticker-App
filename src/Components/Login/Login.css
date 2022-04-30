@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.forgot-error{
+    color:red;
+    font-weight:700;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+}
+.forgot__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.199);
+    z-index: 999;
+}
+.forgot__modal .modal{
+    background: #fff;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+}
+.forgot__modal .modal h1{
+    text-align: center;
+    margin: 8% 0;
+}
+.forgot__modal .modal input{
+    margin: 0 10%;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+.forgot__modal .modal button{
+    margin: 30px 30%;
+    width: 40%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #F53434;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+.login__page{
+    font-family: 'Poppins', sans-serif !important;
+}
+a{
+    text-decoration: none;
+}
+.login__page .right__content {
+    display: flex;
+    width: 30%;
+    padding-right: 30px;
+    height: 100vh;
+    justify-content: center;
+    /* background-color: #63a4ff; */
+    /* background: red; */
+    background-image: url('../../Images/SignIn.png');
+    background-size: contain;
+    background-size: 380px 100vh;
+}
+.login__page .right__content .content__text h1{
+    /* padding: 0 30px; */
+    color: #fff;
+    /* font-weight: 700; */
+    letter-spacing: 1px;
+}
+.login__page .right__content .content__text p{
+    color: #fff;
+}
+.login__page .right__content .content__text{
+    padding: 100px 0;
+    text-align: center;
+}
+.login__page .left__content{
+    width: 73%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 27%;
+    padding: 8% 15%;
+    overflow-y: hidden;
+    /* border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px; */
+}
+.login__page .left__content .title{
+    margin-bottom: 30px;
+}
+.login__page .left__content .signin__options{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+.login__page .login__form .forgot__password{
+    color: #000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.login__page .left__content .signin__options .login__google, .login__page .left__content .signin__options .login__facebook{
+    display: flex;
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid rgba(128, 128, 128, 0.493);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;;
+    color: rgba(128, 128, 128, 0.61);
+    cursor: pointer;
+}
+.login__page .left__content .signin__options .login__google:hover, .login__page .left__content .signin__options .login__facebook:hover{
+    background: rgba(128, 128, 128, 0.267) ;
+}
+.login__page .left__content .or{
+    padding: 40px 40% 0 42%;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.747);
+}
+.login__page .left__content .login__form {
+    display: flex;
+    width: 94%;
+    height: 40vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.login__page .left__content a{
+    color: blue;
+}
+.login__page .left__content .login__form input {
+    padding: 5px 0;
+    border: none;
+    margin-bottom: 10px;
+    outline: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+}
+.login__page .left__content .login__form button{
+    padding: 8px;
+    margin-top:20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #F53434;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;;
+}
+.login__page .left__content .no__account{
+    color: gray
+}
+.or .no__account{
+    margin-top:30px;
+}
+
+.or .login__form .forgot__password{
+    margin: 10px 0px;
+}
+
+@media(max-width: 1000px) {
+    .login__page .right__content{
+        display: none;
+    }
+    .login__page .left__content {
+        width: 100vw;
+        padding-left: 20vw;
+        left: 0;
+        padding-top: 10%;
+    }
+     .login__page .left__content .no__account{
+        text-align: center;
+    }
+    .left__content .title h1{
+        margin-right: 40px;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .left__content .signin__options .login__google{
+       margin-left:170px;
+    }
+}
+@media(max-width: 768px) {
+    .login__page .left__content {
+        padding-left:10vw;
+    }
+    .login__page .left__content .or{
+        text-align: center;
+    }
+    .login__page .left__content .signin__options{
+        height: 100px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-right: 250px;
+    }
+    .login__page .left__content .signin__options .login__google
+    {
+        margin-right: 130px;
+    }
+    .login__page .left__content .title h1{
+        margin-top: 5px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .or .login__form .forgot__password{
+        margin: 30px 0px;
+        overflow-y: hidden;
+    }
+    .login__page .left__content .no__account
+    {
+        margin-right: 50px;
+    }
+}
+@media(max-width: 480px)
+{
+    .left__content
+    {
+        height: 100vh;
+    }
+    .left__content .title h1{
+        margin-top: 300px;
+        font-size: 2rem;
+    }
+}
+@media(max-width: 320px)
+{
+    .left__content
+    {
+        height: 100vh;
+    }
+    .left__content .title h1{
+        margin-top: 300px;
+        margin-left: 40px;
+        font-size: 2rem;
+    }
+    .login__page .left__content .signin__options .login__google
+    {
+        width: 38%;
+        margin-right: 260px;
+    }
+    .login__page .left__content .no__account
+    {
+        margin-right: 10px;
+       font-size: 14px;
+    }
+}
+@media (max-width:415px) and (min-width:375px)
+{
+    .left__content .title h1{
+        margin-top: 300px;
+        margin-left: 40px;
+        font-size: 3rem;
+    }
+    .login__page .left__content .signin__options .google__btn{
+       margin-left: 185px;
+    }
+    .login__page .left__content .signin__options .login__google
+    {
+        width: 30%;
+        margin-right:460px;
+    }
+    .login__page .left__content .no__account{
+        margin-right: 50px;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.forgot-error{
+    color:red;
+    font-weight:700;
+    margin: 10px 5px;
+    overflow-y:hidden;
+}
+.register__page .right__content {
+    width: 30%;
+    height: 100vh;
+    /* background-color: #63a4ff; */
+    background-image: url('../../Images/hand_congress\ 2.png');
+    background-size: 100%;
+}
+.register__page .right__content .content__text{
+    padding:100px 0;
+    text-align: center;
+}
+.register__page .right__content .content__text h1{
+    /* padding: 0 30px; */
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.register__page .right__content .content__text p{
+    /* padding: 40px 80px 0 30px; */
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 7px;
+}
+.register__page .left__content{
+    width: 73%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 27%;
+    padding: 4% 15%;
+    /* border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px; */
+}
+.register__page .left__content .title{
+    margin-bottom: 10px;
+}
+.register__page .left__content .title h1{
+   font-size: 3rem;
+   text-align: center;
+}
+.register__page .left__content .signin__options{
+    display: flex;
+    justify-content: space-between;
+}
+.register__page .left__content .signin__options .login__google{
+    margin: 0 auto;
+    padding-right: 30px;
+}
+.register__page .left__content .signin__options .login__google, .register__page .left__content .signin__options .login__facebook{
+    display: flex;
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid rgba(128, 128, 128, 0.493);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;;
+    color: rgba(128, 128, 128, 0.61);
+    cursor: pointer;
+}
+.register__page .left__content .signin__options .login__google:hover, .register__page .left__content .signin__options .login__facebook:hover{
+    background: rgba(128, 128, 128, 0.267) ;
+}
+.register__page .left__content{
+    margin-top: 2%;
+}
+.register__page .left__content .or{
+    padding: 40px 40% 0 42%;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.747);
+}
+.register__page .left__content .login__form {
+    display: flex;
+    width: 94%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow-y: visible;
+}
+.register__page .left__content .login__form label{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.register__page .left__content .login__form input {
+    margin:10px 0px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+}
+.register__page .left__content .login__form ::placeholder {
+   font-size: 1.25rem;
+}
+.register__page .left__content .login__form button{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background: #F53434;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;;
+    cursor: pointer;
+}
+.register__page .left__content .no__account{
+    color: gray
+}
+.google__btn{
+    border: none;
+    background-color: #fff;
+}
+
+@media(max-width: 1000px) {
+    .register__page .right__content{
+        display: none;
+    }
+    .register__page .left__content {
+        width: 100vw;
+        padding-left: 20vw;
+        padding-top: 10%;
+        left: 0;
+    }
+    .register__page .left__content .no__account{
+        text-align: center;
+    }
+}
+@media(max-width: 760px) {
+    .register__page .left__content {
+        padding-left:10vw;
+    }
+    .register__page .left__content .or{
+        text-align: center;
+    }
+    .register__page .left__content .signin__options{
+        height: 100px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-left: 20px;
+    }
+    .register__page .left__content .title {
+        text-align: center;
+    }
+}
+@media(max-width: 480px)
+{
+    .register__page .left__content .title h1{
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+}
+@media(max-width: 320px)
+{
+    .register__page .left__content .title h1{
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+    .register__page .left__content .signin__options .login__google{
+        margin: 0 20px 10px 0px;
+    }
+}

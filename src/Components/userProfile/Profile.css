@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+.dashboard {
+    padding: 3vh 7vw;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.dashboard .nav-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.dashboard .nav-bar .logo {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    justify-content: space-evenly;
+    color: #f53434;
+}
+.dashboard .nav-bar .logo p {
+    padding-top: 7px;
+}
+.dashboard .nav-bar .logo span {
+    font-weight: 700;
+}
+.dashboard .nav-bar .nav-links ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    line-height: 80px;
+    align-items: center;
+}
+.dashboard .nav-bar .nav-links li a {
+    color: #74a4f8;
+    font-size: 14px;
+    font-weight: 500;
+}
+.dashboard .nav-bar .nav-links .selected {
+    color: #f53434;
+    font-weight: 500;
+}
+.dashboard .nav-bar .nav-links li a:hover {
+    color: #f53434;
+}
+.dashboard .nav-bar .profile {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-evenly;
+    font-weight: 600;
+}
+.dashboard .content h1 {
+    padding-top: 80px;
+}
+.dashboard .content span {
+    color: #f53434;
+}
+.dashboard .content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f53434;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.dashboard .campaign__list h2 {
+    margin-top: 50px;
+}
+.dashboard .campaign__list .header__bar {
+    display: grid;
+    width: 98%;
+    margin-top: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 20px 0px;
+    background-color: #c4c4c445;
+}
+.dashboard .campaign__list .header__bar .exe {
+    margin-right: 40px;
+}
+
+.dashboard .campaign__list .campaign__bar .campaigns {
+    display: grid;
+    width: 98%;
+    align-items: center;
+    margin: 10px 0;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 20px 0px;
+    /* background-color: #C4C4C445; */
+}
+/* .dashboard .campaign__list .campaign__bar .campaigns .campaign__name {
+    width: 14%;
+} */
+.dashboard .campaign__list .campaign__bar .campaigns .campaign__status {
+    /* margin-left: -30px; */
+    display: flex;
+    padding: 4px 16px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    /* align-self: center; */
+    background: #67f06459;
+}
+
+/* .dashboard .campaign__list .campaign__bar .campaigns .campaign__amount{
+    text-align: center;
+}
+.dashboard .campaign__list .campaign__bar .campaigns .due__date {
+    margin-right: -150px;
+} */
+.dashboard .campaign__list .campaign__bar .campaigns .view__more {
+    position: absolute;
+    right: 4%;
+    cursor: pointer;
+}
+.campaign__modal {
+    position: absolute;
+    right: 10%;
+    background: #fff;
+    padding: 10px;
+    z-index: 99;
+    cursor: pointer;
+    /* border: 1px solid #000; */
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.campaign__modal .modal__elements {
+    display: flex;
+    width: 180px;
+    background-color: #fff;
+    padding: 5px;
+}
+.campaign__modal .modal__elements img {
+    margin-right: 10px;
+}
+@media (max-width: 1100px) {
+    .due__date,
+    .date__header {
+        display: none;
+    }
+    .dashboard .campaign__list .campaign__bar .campaigns,
+    .dashboard .campaign__list .header__bar {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .campaign__amount,
+    .amount__raised {
+        display: none;
+    }
+    .dashboard .campaign__list .campaign__bar .campaigns,
+    .dashboard .campaign__list .header__bar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
